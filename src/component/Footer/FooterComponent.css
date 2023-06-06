@@ -1,0 +1,53 @@
+.footercomponent {
+  background-color: #231f20;
+  padding: 20px;
+  margin-top: 10px;
+}
+.footerbtncomponent {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 60px; */
+}
+ul li {
+  color: white;
+}
+#footerbtn li button {
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 18px;
+}
+#footerbtn li {
+  margin-bottom: 20px;
+}
+.icon-btn li {
+  margin-bottom: 20px;
+}
+.icon-btn li i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.icon-btn li span {
+  font-family: "Racing Sans One";
+  margin-left: 10px;
+}
+.footernav-content {
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}
+.aboutus {
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}
+.mapfooter {
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.mapfooter1 {
+  margin-left: 30px;
+}

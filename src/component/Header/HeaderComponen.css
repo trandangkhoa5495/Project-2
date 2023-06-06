@@ -1,0 +1,85 @@
+.navcomponent {
+  display: flex;
+  padding: 0 30px;
+  background-color: #231f20;
+  justify-content: space-between;
+  align-items: center;
+}
+.navcomponent img {
+  width: 180px;
+  height: 150px;
+}
+
+.navchoose ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.navchoose ul li {
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+
+  font-family: "Racing Sans One";
+}
+a:hover {
+  color: #ef4136;
+}
+.linecolor {
+  height: 4px;
+  background-color: #ef4136;
+}
+#logoutimg {
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+/* button */
+.choosecar {
+  background-color: #231f20;
+  display: flex;
+
+  justify-content: center;
+}
+
+#btnchoosecar {
+  background-color: #231f20;
+  width: 180px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-family: "Racing Sans One";
+  display: flex;
+  font-size: 15px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#btnchoosecar:hover {
+  background-color: #ef4136;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+#logout {
+  background-color: #231f20;
+  border: none;
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}
+#logout:hover {
+  color: #ef4136;
+}

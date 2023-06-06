@@ -1,0 +1,57 @@
+.registercomponent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #231f20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registercomponent1 {
+  width: 400px;
+  border: 3px solid #ef4136;
+}
+/* hình */
+.registerimg {
+  width: 180px;
+  height: 150px;
+}
+.registerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* form */
+.registerform {
+  margin: 20px;
+}
+.registerform label {
+  color: #ef4136;
+  font-family: "Racing Sans One";
+  font-size: 25px;
+}
+.registerform input {
+  width: 350px;
+  height: 25px;
+  margin: 10px 0;
+}
+
+.btnregister {
+  margin: 20px 0;
+  text-align: center;
+}
+.btnregister button {
+  border: #ef4136;
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  font-family: "Racing Sans One";
+  font-size: 35px;
+  width: 150px;
+  height: 40px;
+}
+
+.btnregister button:hover {
+  color: #ef4136;
+}
+.registerform span {
+  color: red;
+}

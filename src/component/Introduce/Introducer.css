@@ -1,0 +1,8 @@
+.introduce {
+  padding: 10px 20px;
+}
+.imgintroduce {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
