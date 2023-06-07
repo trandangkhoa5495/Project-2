@@ -6,3 +6,15 @@
   justify-content: center;
   margin: 20px;
 }
+.introduce h2 {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.introduce p {
+  font-family: "Turret Road";
+  font-size: 20px;
+}
+.introduce h5 {
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}

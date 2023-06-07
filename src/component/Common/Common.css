@@ -1,0 +1,142 @@
+.commontcomponent {
+  background-color: #fcfdfd;
+  background-image: linear-gradient(90deg, #fcfdfd 0%, #ced4d8 100%);
+  padding: 10px;
+}
+.commontcomponent1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commontcomponent1 p {
+  font-family: "Racing Sans One";
+  margin: 0 10px;
+}
+.contactcomponenttotal {
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.contactcomponentimg {
+  display: flex;
+  justify-content: center;
+}
+
+.contactcomponentimg img {
+  width: 60px;
+  height: 60px;
+}
+.contactcomponentcontent h6 {
+  font-family: "Racing Sans One";
+  font-size: 25px;
+  margin: 0px;
+}
+.contactcomponentcontent p {
+  font-family: "Turret Road";
+}
+.commonline {
+  border: 1px solid #ef4136;
+  background-color: #ef4136;
+  width: 200px;
+  height: 1px;
+}
+.commontcomponent2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+.imgsearch img {
+  width: 50px;
+  height: 50px;
+}
+.imgsearch {
+  background-color: #ced4d800;
+  border: none;
+}
+.imgsearch1 {
+  font-family: "Racing Sans One";
+  display: flex;
+  flex-direction: column;
+}
+.imgsearch2 {
+  display: flex;
+  gap: 15px;
+}
+.imgsearch3 img {
+  width: 70px;
+  height: 50px;
+}
+.imgsearch3 {
+  background-color: #ced4d800;
+  border: none;
+}
+.utilities > p {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.utilities {
+  width: 450px;
+  padding: 10px;
+}
+/*  form nhận tư vấn */
+.consultancy {
+  width: 450px;
+  padding: 10px;
+}
+.consultancy > p:nth-child(1) {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.consultancy > p:nth-child(2) {
+  font-family: "Turret Road";
+  font-size: 15px;
+}
+.formconsultancy label {
+  font-family: "Racing Sans One";
+}
+.formconsultancy input {
+  width: 400px;
+  height: 25px;
+}
+.formconsultancy1 {
+  display: flex;
+  justify-content: right;
+  width: 400px;
+}
+.formconsultancy1 > button {
+  margin-top: 15px;
+  font-family: "Racing Sans One";
+  border: none;
+  background-color: rgba(255, 99, 71, 0);
+  font-size: 20px;
+}
+.formconsultancy1 > button:hover {
+  color: #ef4136;
+}
+.utilitiestotal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/* form bình luận */
+.avatarcomponent {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.avatarcomponent img {
+  width: 80px;
+  height: 80px;
+  padding-bottom: 10px;
+  border-radius: 100%;
+}
+.avatarcomment {
+  display: flex;
+  justify-content: center;
+  background-color: #eef0f2;
+}

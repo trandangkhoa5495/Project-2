@@ -1,5 +1,6 @@
 import React from "react";
 import "./Introducer.css";
+
 const Introduce = () => {
   return (
     <div className="introduce">
@@ -25,8 +26,8 @@ const Introduce = () => {
       </p>
       <p>
         <h5>
-          <b>1. VEHICLE SERVICES:</b>{" "}
-        </h5>{" "}
+          <b>1. VEHICLE SERVICES:</b>
+        </h5>
         In order to meet the increasing demand for car use, if you are an
         individual or an organization (business / company) with a source of idle
         cars. Business people, doing business in the field of car rental

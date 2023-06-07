@@ -1,0 +1,53 @@
+.buycarimg {
+  height: 900px;
+  background-image: url("../../../public/img/backgroud2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyforminformation {
+  width: 800px;
+  height: 650px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.buyforminformation p:nth-child(1) {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.buyforminformation p:nth-child(2) {
+  font-family: "Turret Road";
+  font-size: 18px;
+}
+.buyforminformation1 input {
+  width: 95%;
+  height: 30px;
+  margin: 10px;
+  background-color: #eef0f2;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.buyforminformation1 textarea {
+  width: 95%;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #eef0f2;
+}
+.btnsendbuy {
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.btnsendbuy button {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.btnsendbuy button:hover {
+  color: #ef4136;
+}

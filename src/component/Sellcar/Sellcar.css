@@ -1,0 +1,52 @@
+.sellcarimg {
+  height: 900px;
+  background-image: url("../../../public/img/background1.jpg");
+  display: grid;
+  place-items: center;
+}
+
+.forminformation {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.forminformation p:nth-child(1) {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.forminformation p:nth-child(2) {
+  font-family: "Turret Road";
+  font-size: 18px;
+}
+.forminformation1 input {
+  width: 95%;
+  height: 30px;
+  margin: 10px;
+  background-color: #eef0f2;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.forminformation1 textarea {
+  width: 95%;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #eef0f2;
+}
+.btnsend {
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.btnsend button {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  font-family: "Racing Sans One";
+  font-size: 30px;
+}
+.btnsend button:hover {
+  color: #ef4136;
+}

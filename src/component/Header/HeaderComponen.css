@@ -30,7 +30,7 @@ a:hover {
   color: #ef4136;
 }
 .linecolor {
-  height: 4px;
+  height: 3px;
   background-color: #ef4136;
 }
 #logoutimg {
@@ -52,7 +52,6 @@ a:hover {
 .choosecar {
   background-color: #231f20;
   display: flex;
-
   justify-content: center;
 }
 
@@ -82,4 +81,28 @@ a:hover {
 }
 #logout:hover {
   color: #ef4136;
+}
+.shoppingcart {
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+}
+#shoppingcart {
+  background-color: #231f2000;
+  border: none;
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+#shoppingcart span {
+  position: absolute;
+  top: 0px;
+  right: 18px;
+  font-size: 20px;
+  color: #ef4136;
+}
+
+#shoppingcart img {
+  width: 35px;
+  height: 35px;
 }

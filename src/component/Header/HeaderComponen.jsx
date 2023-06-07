@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./HeaderComponen.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { logout } from "../../redux/reducer/useSlice";
 
 const HeaderComponen = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -32,10 +30,10 @@ const HeaderComponen = () => {
               <Link to={"/deposit"}>CONSIGNMENT CAR</Link>
             </li>
             <li>
-              <Link to={"/sellcar"}>SELL CAR</Link>
+              <Link to={"/buycar"}>BUY CAR</Link>
             </li>
             <li>
-              <Link to={"/changecar"}>BUY CAR</Link>
+              <Link to={"/sellcar"}>SELL CAR</Link>
             </li>
           </ul>
         </div>
@@ -88,6 +86,13 @@ const HeaderComponen = () => {
         <button id="btnchoosecar">
           <img src="./img/LOGOPOSCHE.png" />
           PORSCHE
+        </button>
+      </div>
+
+      <div className="shoppingcart">
+        <button id="shoppingcart">
+          <img src="./img/basket.png" />
+          <span>0</span>
         </button>
       </div>
     </>
