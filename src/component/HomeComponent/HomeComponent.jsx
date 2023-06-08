@@ -1,10 +1,11 @@
 import React from "react";
 import Common from "../Common/Common";
+import Lishproduct from "../Lishproducts/Lishproduct";
 
 const HomeComponent = () => {
   return (
     <div>
-      HomeComponent
+      <Lishproduct />
       <Common />
     </div>
   );

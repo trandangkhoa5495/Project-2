@@ -90,10 +90,10 @@ const HeaderComponen = () => {
       </div>
 
       <div className="shoppingcart">
-        <button id="shoppingcart">
+        <Link id="shoppingcart" to={"/shoppingcart"}>
           <img src="./img/basket.png" />
           <span>0</span>
-        </button>
+        </Link>
       </div>
     </>
   );
