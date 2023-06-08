@@ -11,8 +11,18 @@ import Sellcar from "./component/Sellcar/Sellcar";
 import Buycar from "./component/Buycar/Buycar";
 import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
 import Details from "./component/Detail/Details";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { handleCallAPIproduct } from "./redux/reducer/productSlice";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const handleGetProducts = async () => {
+      await dispatch(handleCallAPIproduct()).unwrap();
+    };
+    handleGetProducts();
+  }, []);
   return (
     <div className="App">
       <Routes>
@@ -22,7 +32,7 @@ function App() {
           <Route path="sellcar" element={<Buycar />} />
           <Route path="buycar" element={<Sellcar />} />
           <Route path="shoppingcart" element={<ShoppingCart />} />
-          <Route path="details" element={<Details />} />
+          <Route path="details/:id" element={<Details />} />
         </Route>
         <Route path="/admin" index element={<AdminPage />} />
         <Route path="/Login" element={<LoginComponent />} />

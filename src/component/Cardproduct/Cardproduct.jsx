@@ -1,27 +1,30 @@
 import React from "react";
 import "./Cardproduct.css";
-import { Link } from "react-router-dom";
-const Cardproduct = () => {
+import { Link, NavLink } from "react-router-dom";
+const Cardproduct = (props) => {
+  const data = props.product;
   return (
     <>
-      <div className="totalcardproduct">
-        <div className="cardproductimg">
-          <img src="./img/LEXUS-LX-570-1.jpeg" />
+      {data.map((product) => (
+        <div className="totalcardproduct">
+          <div className="cardproductimg">
+            <img src={product.img} />
+          </div>
+          <div className="cardproductcontent">
+            <p>Name: {product.name}</p>
+            <p>Price: {product.price.toLocaleString("en-GB")}</p>
+            <p>
+              <img src="./img/calendar.png" />
+              {product.year}
+            </p>
+            <p>
+              <img src="./img/kilometer.png" />
+              {product.km} Km
+            </p>
+          </div>
+          <NavLink to={`/details/${product.id}`}>DETAIL</NavLink>
         </div>
-        <div className="cardproductcontent">
-          <p>Name: Volvo S60</p>
-          <p>Price: 1.200.000.000</p>
-          <p>
-            <img src="./img/calendar.png" />
-            2021
-          </p>
-          <p>
-            <img src="./img/kilometer.png" />
-            12.000 Km
-          </p>
-        </div>
-        <Link to={"/details"}>DETAIL</Link>
-      </div>
+      ))}
     </>
   );
 };

@@ -8,7 +8,7 @@ const Details = () => {
         <p>DETAILS</p>
         <div className="detailscomponentparent">
           <div className="detailscomponentimg">
-            <img src="./img/MEC-GLS450-2021.jpeg" />
+            <img src="./img/LEXUS-LX-570-1.jpeg" />
           </div>
           <div className="detailscomponentcontent">
             <p>Name: Mecerdes</p>
