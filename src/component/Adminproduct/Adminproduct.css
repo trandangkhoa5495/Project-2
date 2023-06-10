@@ -1,0 +1,50 @@
+.adminuser {
+  padding: 50px;
+}
+.tableuser {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+}
+.tableuser tr th {
+  font-family: "Racing Sans One";
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 3px solid #ef4136;
+}
+.tableuser tr td {
+  font-family: "Turret Road";
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ced4d8;
+}
+#btnactive {
+  width: 90px;
+  padding: 2px 0;
+  margin: 0px 5px;
+  border: 2px solid green;
+  color: green;
+  background-color: rgba(255, 0, 0, 0);
+  font-family: "Turret Road";
+}
+#btnunactive {
+  width: 90px;
+  padding: 2px 0;
+  margin: 0px 5px;
+  border: 2px solid red;
+  color: red;
+  background-color: rgba(255, 0, 0, 0);
+  font-family: "Turret Road";
+}
+#detailscomponent {
+  background-color: rgba(255, 0, 0, 0);
+  font-family: "Turret Road";
+  border: none;
+  font-size: 20px;
+}
+#imgavatar {
+  width: 50px;
+  height: 50px;
+}

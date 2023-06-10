@@ -1,19 +1,36 @@
 import React, { useState } from "react";
 import "./HeaderComponen.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const HeaderComponen = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-
+  const navigate = useNavigate();
   const handlelogout = () => {
-    localStorage.clear();
+    localStorage.removeItem("user");
     setUser(undefined);
+    navigate("/");
+  };
+
+  const userDB = JSON.parse(localStorage.getItem("user"));
+
+  const listproductDB = useSelector((state) => {
+    return state.cardSlice;
+  });
+  console.log(listproductDB);
+  const cartDB = listproductDB.find(
+    (cart) => cart.userCurrent?.id == userDB?.id
+  );
+  const listproduct = cartDB?.cartProduct;
+
+  const handlesearch = (data) => {
+    navigate("/", { state: { data } });
   };
 
   return (
     <>
       <div className="navcomponent">
-        <img src="./img/LOGO5.jpg" />
+        <img src={process.env.PUBLIC_URL + "img/LOGO5.jpg"} />
 
         <div className="navchoose">
           <ul>
@@ -27,7 +44,7 @@ const HeaderComponen = () => {
               <Link to={"/onsale"}>CAR FOR SALE</Link>
             </li>
             <li>
-              <Link to={"/deposit"}>CONSIGNMENT CAR</Link>
+              <Link to={"/consignment"}>CONSIGNMENT CAR</Link>
             </li>
             <li>
               <Link to={"/buycar"}>BUY CAR</Link>
@@ -67,23 +84,23 @@ const HeaderComponen = () => {
       <div className="linecolor"></div>
 
       <div className="choosecar">
-        <button id="btnchoosecar">
+        <button id="btnchoosecar" onClick={() => handlesearch("audi")}>
           <img src="./img/LOGOAUDI.png" />
           AUDI
         </button>
-        <button id="btnchoosecar">
+        <button id="btnchoosecar" onClick={() => handlesearch("bmw")}>
           <img src="./img/LOGOBMW.png" />
           BMW
         </button>
-        <button id="btnchoosecar">
+        <button id="btnchoosecar" onClick={() => handlesearch("lexus")}>
           <img src="./img/LOGOLEXUS.png" />
           LEXUS
         </button>
-        <button id="btnchoosecar">
+        <button id="btnchoosecar" onClick={() => handlesearch("mercedes")}>
           <img src="./img/LOGOMEC.png" />
           MECERDES
         </button>
-        <button id="btnchoosecar">
+        <button id="btnchoosecar" onClick={() => handlesearch("porsche")}>
           <img src="./img/LOGOPOSCHE.png" />
           PORSCHE
         </button>
@@ -92,7 +109,7 @@ const HeaderComponen = () => {
       <div className="shoppingcart">
         <Link id="shoppingcart" to={"/shoppingcart"}>
           <img src="./img/basket.png" />
-          <span>0</span>
+          <span>{listproduct?.length}</span>
         </Link>
       </div>
     </>

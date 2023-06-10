@@ -1,0 +1,22 @@
+.navcomponent {
+  display: flex;
+  padding: 0 30px;
+  background-color: #231f20;
+  justify-content: space-between;
+  align-items: center;
+}
+.navcomponent img {
+  width: 180px;
+  height: 150px;
+}
+.manageproduct {
+  background-color: #231f20;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.manageproduct a {
+  font-size: 20px;
+}

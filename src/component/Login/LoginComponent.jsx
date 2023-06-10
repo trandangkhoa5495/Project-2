@@ -26,7 +26,7 @@ const LoginComponent = () => {
       const data = await dispatch(login(getform)).unwrap();
       toast.success("Logged in successfully", {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -38,7 +38,7 @@ const LoginComponent = () => {
     } catch (error) {
       toast.error(error.message, {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

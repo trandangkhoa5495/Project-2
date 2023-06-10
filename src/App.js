@@ -11,9 +11,13 @@ import Sellcar from "./component/Sellcar/Sellcar";
 import Buycar from "./component/Buycar/Buycar";
 import ShoppingCart from "./component/ShoppingCart/ShoppingCart";
 import Details from "./component/Detail/Details";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { handleCallAPIproduct } from "./redux/reducer/productSlice";
+import Carforsale from "./component/Carforsale/Carforsale";
+import Consignment from "./component/Consignment/Consignment";
+import Adminuser from "./component/Adminuer/Adminuser";
+import Adminproduct from "./component/Adminproduct/Adminproduct";
 
 function App() {
   const dispatch = useDispatch();
@@ -23,6 +27,9 @@ function App() {
     };
     handleGetProducts();
   }, []);
+
+  const data = useSelector((state) => state.cardSlice);
+  // console.log("data đổ về giao diện", data);
   return (
     <div className="App">
       <Routes>
@@ -33,8 +40,13 @@ function App() {
           <Route path="buycar" element={<Sellcar />} />
           <Route path="shoppingcart" element={<ShoppingCart />} />
           <Route path="details/:id" element={<Details />} />
+          <Route path="onsale" element={<Carforsale />} />
+          <Route path="consignment" element={<Consignment />} />
         </Route>
-        <Route path="/admin" index element={<AdminPage />} />
+        <Route path="/admin" element={<AdminPage />}>
+          <Route path="adminuser" element={<Adminuser />} />
+          <Route path="productmanager" element={<Adminproduct />} />
+        </Route>
         <Route path="/Login" element={<LoginComponent />} />
         <Route path="/register" element={<RegisterComponen />} />
         <Route path="/uploadimg" element={<Uploadimg />} />
