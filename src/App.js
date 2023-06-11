@@ -18,6 +18,7 @@ import Carforsale from "./component/Carforsale/Carforsale";
 import Consignment from "./component/Consignment/Consignment";
 import Adminuser from "./component/Adminuer/Adminuser";
 import Adminproduct from "./component/Adminproduct/Adminproduct";
+import { handleGetAllUsers } from "./redux/reducer/useSlice";
 
 function App() {
   const dispatch = useDispatch();
@@ -28,8 +29,6 @@ function App() {
     handleGetProducts();
   }, []);
 
-  const data = useSelector((state) => state.cardSlice);
-  // console.log("data đổ về giao diện", data);
   return (
     <div className="App">
       <Routes>

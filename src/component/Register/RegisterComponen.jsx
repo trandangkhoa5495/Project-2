@@ -17,6 +17,7 @@ const RegisterComponen = () => {
     password: "",
     repeatPassword: "",
     phoneNumber: "",
+    role: 1,
   });
   //khi form submit minh di= spatch action
 

@@ -17,7 +17,12 @@ const LoginComponent = () => {
   };
 
   const returnHome = () => {
-    navigate("/");
+    const useradmin = JSON.parse(localStorage.getItem("user"));
+    if (useradmin.email == "admin@gmail.com") {
+      navigate("/admin");
+    } else {
+      navigate("/");
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -34,7 +39,7 @@ const LoginComponent = () => {
         progress: undefined,
         theme: "light",
       });
-      data && setTimeout(returnHome, 3000);
+      setTimeout(returnHome, 3000);
     } catch (error) {
       toast.error(error.message, {
         position: "top-right",

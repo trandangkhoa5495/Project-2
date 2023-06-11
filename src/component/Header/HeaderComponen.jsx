@@ -8,6 +8,7 @@ const HeaderComponen = () => {
   const navigate = useNavigate();
   const handlelogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("accesstoken");
     setUser(undefined);
     navigate("/");
   };
@@ -17,7 +18,7 @@ const HeaderComponen = () => {
   const listproductDB = useSelector((state) => {
     return state.cardSlice;
   });
-  console.log(listproductDB);
+
   const cartDB = listproductDB.find(
     (cart) => cart.userCurrent?.id == userDB?.id
   );

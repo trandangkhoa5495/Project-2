@@ -29,6 +29,10 @@
   background-color: rgba(255, 0, 0, 0);
   font-family: "Turret Road";
 }
+#btnactive:hover {
+  background-color: green;
+  color: white;
+}
 #btnunactive {
   width: 90px;
   padding: 2px 0;
@@ -38,11 +42,20 @@
   background-color: rgba(255, 0, 0, 0);
   font-family: "Turret Road";
 }
+#btnunactive:hover {
+  background-color: red;
+  color: white;
+}
 #detailscomponent {
   background-color: rgba(255, 0, 0, 0);
   font-family: "Turret Road";
-  border: none;
+  border: 1px solid red;
+  border-radius: 10px;
   font-size: 20px;
+}
+#detailscomponent:hover {
+  background-color: #ef4136;
+  color: white;
 }
 #imgavatar {
   width: 50px;

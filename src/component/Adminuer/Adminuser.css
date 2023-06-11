@@ -20,7 +20,7 @@
   padding: 10px 0;
   border-bottom: 1px solid #ced4d8;
 }
-#btnactive {
+#btnactiveuser {
   width: 90px;
   padding: 2px 0;
   margin: 0px 5px;
@@ -35,4 +35,8 @@
   border: 2px solid red;
   color: red;
   background-color: rgba(255, 0, 0, 0);
+}
+#btnunactive:hover {
+  background-color: red;
+  color: white;
 }
